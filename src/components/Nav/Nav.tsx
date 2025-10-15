@@ -10,16 +10,6 @@ export function Nav() {
                         Productos
                     </Link>
                 </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to="/sobre-nosotros">
-                        Sobre nosotros
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to="/contacto">
-                        Contacto
-                    </Link>
-                </li>
             </ul>
         </nav>
     );
