@@ -1,0 +1,25 @@
+.nav {
+    padding: 0.5rem 1rem;
+    background-color: #eeeeee;
+    border-radius: 15px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+}
+
+.nav-item {
+    margin: 1px auto;
+}
+
+.nav-link {
+    font-weight: 600;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.02), 0 2px 6px rgba(15,23,42,0.06);
+}
+
+
