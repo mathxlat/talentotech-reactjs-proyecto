@@ -1,27 +1,27 @@
 [
     {
-        "id": "gpu-rtx5080",
+        "id": "gpu-nvidia-rtx5080",
         "name": "NVIDIA GeForce RTX 5080",
         "description": "Para ganar cualquier batalla, necesitás ver hasta el último detalle. Con la RTX 5080, vas a poder jugar en 4K con todo al máximo, para que no se te escape ni un enemigo en el mapa.",
         "price": 999,
         "imageUrl": "/images/gpu-nvidia-rtx5080.webp"
     },
     {
-        "id": "cpu-ryzen9-9950x",
+        "id": "cpu-amd-ryzen9-9950x",
         "name": "AMD Ryzen 9 9950X",
         "description": "¿Querés jugar, escuchar música y estar en Discord, todo a la vez y sin que se te caigan los FPS? Este Ryzen se encarga de todo para que tu juego siempre vaya fluido.",
         "price": 699,
         "imageUrl": "/images/cpu-amd-ryzen9-9950x.webp"
     },
     {
-        "id": "mb-z890-tomahawk-wifi",
+        "id": "mb-msi-z890-tomahawk-wifi",
         "name": "MSI MAG Z890 Tomahawk WiFi",
         "description": "De nada sirve tener la mejor placa de video y el procesador más rápido si tu mother los frena. La Z890 Tomahawk es la base que necesitan tus componentes para volar y darte toda su potencia.",
         "price": 299,
         "imageUrl": "/images/mb-msi-z890-tomahawk-wifi.webp"
     },
     {
-        "id": "ram-ddr5-64gb-6000-cl30",
+        "id": "ram-corsair-ddr5-64gb-6000-cl30",
         "name": "Corsair Vengeance DDR5 64GB (2x32) 6000MT/s CL30",
         "description": "Para que la PC no se te quede pensando justo en medio de una partida, necesitás memoria rápida y confiable. Este kit Corsair Vengeance te da la velocidad que necesitás para que todo fluya sin interrupciones.",
         "price": 303.99,
