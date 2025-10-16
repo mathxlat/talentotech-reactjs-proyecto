@@ -10,10 +10,14 @@
     margin: 0;
     padding: 0;
     gap: 1rem;
+    align-items: center;
 }
 
 .nav-item {
-    margin: 1px auto;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
 }
 
 .nav-link {
@@ -22,4 +26,17 @@
     text-shadow: 0 1px 0 rgba(255,255,255,0.02), 0 2px 6px rgba(15,23,42,0.06);
 }
 
-
+.in-cart {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: crimson;
+    line-height: 1;
+}
