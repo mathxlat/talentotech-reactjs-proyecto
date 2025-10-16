@@ -10,11 +10,15 @@ interface ItemListProps {
 export function ItemList({ items }: ItemListProps) {
     return (
         <section className="item-list">
-            {items.map((item) => (
-                <Link key={item.id} to={`/productos/${item.id}`}>
-                    <Item {...item} />
-                </Link>
-            ))}
+            {items.length ? (
+                items.map((item) => (
+                    <Link key={item.id} to={`/productos/${item.id}`}>
+                        <Item {...item} />
+                    </Link>
+                ))
+            ) : (
+                <p>No hay productos</p>
+            )}
         </section>
     );
 }
