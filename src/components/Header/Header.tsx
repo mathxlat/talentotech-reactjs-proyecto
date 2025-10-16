@@ -10,9 +10,6 @@ export function Header() {
                     <Link to="/">PC Hardware Club</Link>
                 </div>
                 <Nav />
-                <div className="header-cart">
-                    <Link to="/carrito">🛒</Link>
-                </div>
             </div>
         </header>
     );
