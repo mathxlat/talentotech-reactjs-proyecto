@@ -26,7 +26,7 @@ npm run build
 
 ## Tecnologías
 
--   React + TypeScript (Vite)
+-   React (Vite)
 -   React Router
 
 ## Funcionalidades
