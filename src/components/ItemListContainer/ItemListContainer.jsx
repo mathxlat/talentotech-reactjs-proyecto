@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import type { Product } from "../../types/product";
 import { ItemList } from "../ItemList/ItemList";
 import "./ItemListContainer.css";
 
 export function ItemListContainer() {
-    const [products, setProducts] = useState<Product[]>([]);
+    const [products, setProducts] = useState([]);
 
     useEffect(() => {
         fetch("/data/products.json")

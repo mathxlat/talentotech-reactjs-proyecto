@@ -1,20 +1,15 @@
-import { useState, type ReactNode } from "react";
+import { useState } from "react";
 import { CartContext } from "./CartContext";
-import type { Product } from "../../types/product";
 
-interface CartProviderProps {
-    children: ReactNode;
-}
+export const CartProvider = ({ children }) => {
+    const [cart, setCart] = useState([]);
 
-export const CartProvider = ({ children }: CartProviderProps) => {
-    const [cart, setCart] = useState<Product[]>([]);
-
-    const exists = (id: string) => {
+    const exists = (id) => {
         const exist = cart.some((item) => item.id === id);
         return exist;
     };
 
-    const addItem = (item: Product) => {
+    const addItem = (item) => {
         if (exists(item.id)) {
             alert("El producto ya existe en el carrito");
             return;

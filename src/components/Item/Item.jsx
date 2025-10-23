@@ -1,18 +1,6 @@
-import type { ReactNode } from "react";
-import type { Product } from "../../types/product";
 import "./Item.css";
 
-interface ItemProps extends Product {
-    children?: ReactNode;
-}
-
-export function Item({
-    name,
-    description,
-    price,
-    imageUrl,
-    children,
-}: ItemProps) {
+export function Item({ name, description, price, imageUrl, children }) {
     return (
         <article className="item">
             <img

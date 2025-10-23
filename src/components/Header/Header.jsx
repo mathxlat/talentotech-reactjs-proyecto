@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Nav } from "../Nav/Nav";
+import { Nav } from "../Nav/Nav.jsx";
 import "./Header.css";
 
 export function Header() {

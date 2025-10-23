@@ -1,13 +1,8 @@
 import { Link } from "react-router-dom";
-import type { Product } from "../../types/product";
 import { Item } from "../Item/Item";
 import "./ItemList.css";
 
-interface ItemListProps {
-    items: Product[];
-}
-
-export function ItemList({ items }: ItemListProps) {
+export function ItemList({ items }) {
     return (
         <section className="item-list">
             {items.length ? (

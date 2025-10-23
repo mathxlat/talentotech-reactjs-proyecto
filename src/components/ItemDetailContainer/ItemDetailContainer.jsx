@@ -1,11 +1,10 @@
 import { useParams } from "react-router-dom";
 import "./ItemDetailContainer.css";
 import { useEffect, useState } from "react";
-import type { Product } from "../../types/product";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
 
 export function ItemDetailContainer() {
-    const [detail, setDetail] = useState<Product | null>(null);
+    const [detail, setDetail] = useState(null);
     const { id } = useParams();
 
     useEffect(() => {
@@ -15,7 +14,7 @@ export function ItemDetailContainer() {
                     throw new Error("Ocurrió un error al obtener el producto");
                 }
 
-                return response.json() as Promise<Product[]>;
+                return response.json();
             })
             .then((data) => {
                 const found = data.find((product) => product.id === id);
