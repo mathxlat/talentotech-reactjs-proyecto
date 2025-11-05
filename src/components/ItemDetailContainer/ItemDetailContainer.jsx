@@ -8,7 +8,7 @@ export function ItemDetailContainer() {
     const { id } = useParams();
 
     useEffect(() => {
-        fetch("/data/products.json")
+        fetch("https://690b8c336ad3beba00f56cc2.mockapi.io/products")
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("Ocurrió un error al obtener el producto");
