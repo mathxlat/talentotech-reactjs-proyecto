@@ -1,0 +1,30 @@
+.count-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.count-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    gap: 5px;
+}
+
+.count-number {
+    padding: 5px 15px;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    font-weight: 700;
+}
+
+.count-button {
+    font-weight: 800;
+}
+
+.count-button-add {
+    font-weight: 600;
+}
