@@ -31,7 +31,7 @@ export const CartProvider = ({ children }) => {
     const deleteItem = (id) => {
         const filteredCart = cart.filter((product) => product.id !== id);
         setCart(filteredCart);
-        alert("Producto eliminado del productot");
+        alert("Producto eliminado del carrito");
     };
 
     const clearCart = () => {
