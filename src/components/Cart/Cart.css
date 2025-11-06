@@ -1,0 +1,36 @@
+.cart-item-list {
+    display: flex;
+    gap: 1rem;
+}
+
+.cart-item-quantity {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 0.8rem;
+}
+
+.cart-button-delete {
+    color: #f04539;
+}
+
+.cart-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cart-total {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cart-button-checkout {
+    color: rgb(130, 173, 238);
+}
+
+.cart-button-clear {
+    color: #f04539;
+}
