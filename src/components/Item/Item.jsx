@@ -9,8 +9,10 @@ export function Item({ name, description, price, imageUrl, children }) {
                 className="item-image"
             />
             <div className="item-content">
-                <h4 className="item-title">{name}</h4>
-                <p className="item-description">{description}</p>
+                <div className="item-detail">
+                    <h4 className="item-title">{name}</h4>
+                    <p className="item-description">{description}</p>
+                </div>
                 <span className="item-price">$ {price}</span>
             </div>
             {children}
