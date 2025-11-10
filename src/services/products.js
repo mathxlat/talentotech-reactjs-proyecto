@@ -4,7 +4,7 @@ export const createProduct = async (product) => {
     const response = await fetch(BASE_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: product,
+        body: JSON.stringify(product),
     });
 
     if (!response.ok) {
