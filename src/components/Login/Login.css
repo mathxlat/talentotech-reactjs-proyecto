@@ -1,0 +1,31 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 760px;
+    margin: auto;
+}
+
+.login-form-title {
+    font-size: 32px;
+}
+
+.login-form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.login-form-label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.login-form-input {
+    font-size: 16px;
+    padding: 4px 8px;
+}
+
+.login-form-button {
+    margin-top: 18px;
+}
