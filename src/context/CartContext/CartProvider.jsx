@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { CartContext } from "./CartContext";
 
-export const CartProvider = ({ children }) => {
+export function CartProvider({ children }) {
     const [cart, setCart] = useState([]);
 
     const exists = (id) => {
@@ -76,4 +76,4 @@ export const CartProvider = ({ children }) => {
     return (
         <CartContext.Provider value={values}>{children}</CartContext.Provider>
     );
-};
+}
