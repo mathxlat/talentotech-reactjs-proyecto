@@ -7,7 +7,7 @@ export function ItemList({ items }) {
         <section className="item-list">
             {items.length ? (
                 items.map((item) => (
-                    <Link key={item.id} to={`/productos/${item.id}`}>
+                    <Link key={item.id} to={`/detalle/${item.id}`}>
                         <Item {...item} />
                     </Link>
                 ))
