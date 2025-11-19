@@ -8,10 +8,40 @@ export const createProduct = async (product) => {
     });
 
     if (!response.ok) {
-        throw new Error("Ocurrió un error al crear el producto");
+        throw new Error("Error al crear el producto");
     }
 
     const result = await response.json();
+
+    return result;
+};
+
+export const getProducts = async (category) => {
+    let url = BASE_URL;
+
+    if (category) {
+        url = `${BASE_URL}?category=${category}`;
+    }
+
+    const res = await fetch(url);
+    if (!res.ok) {
+        throw new Error("Error al obtener la lista de productos");
+    }
+
+    const result = await res.json();
+
+    return result;
+};
+
+export const getProductById = async (id) => {
+    const url = `${BASE_URL}/${id}`;
+
+    const res = await fetch(url);
+    if (!res.ok) {
+        throw new Error("Error al obtener el producto");
+    }
+
+    const result = await res.json();
 
     return result;
 };
